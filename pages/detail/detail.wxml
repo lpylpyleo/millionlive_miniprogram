@@ -1,0 +1,33 @@
+<view class='page'>
+
+  <view class='page__hd'>
+    <view class='page__title'>查询结果</view>
+    <view class='page__desc'>为你找到以下结果，点击图标可以切换觉醒卡面</view>
+  </view>
+
+  <view class='page__bd'>
+
+    <view class='card' wx:for='{{cardInfo}}' wx:key='{{item.sortId}}'>
+      <view class='card-head'>
+        <view bindtap='toggleIcon' id='{{index}}'>
+          <image src="https://storage.matsurihi.me/mltd/icon_l/{{item.resourceId}}_{{item.showAwaken?'1':'0'}}.png" class='thumbnail'></image>
+        </view>
+        <view class='title'>{{item.name}}</view>
+      </view>
+      <view class='flavor-text'>{{item.flavorText}}</view>
+    </view>
+
+    <!-- <view class='card'>
+      <view class='card-head'>
+        <view><image src='https://storage.matsurihi.me/mltd/icon_l/043nor0103_1.png' class='thumbnail'></image></view>
+        <view class='title'>"ようこそ私達の劇場へ！　天海春香"</view>
+      </view>
+      <view class='flavor-text'>あっ……{$P$}さん、\n見に来てくれたんだ！\nわたしの演奏を聴いたら、\nなんて言ってくれるかな……えへへ♪\n上手に弾けるように、頑張らなくちゃ！
+</view>
+    </view> -->
+
+  </view>
+
+
+
+</view>

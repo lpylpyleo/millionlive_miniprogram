@@ -1,0 +1,31 @@
+/* pages/detail/detail.wxss */
+.title{
+  font-size: 1.2em;
+  text-align: center;
+  margin-left: 10rpx;
+}
+
+.thumbnail{
+  height: 80px;
+  width: 80px;
+  border: 1px #ececec solid;
+}
+
+.flavor-text{
+  font-size: 0.8em;
+  padding: 10px;
+  text-indent: 2em;
+}
+
+.card{
+  padding: 10px;
+  background-color: #ececec;
+  box-shadow: 2px 2px 2px #a5a5a5;
+  border:1px solid #868686;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.card-head{
+  display: flex;
+}
