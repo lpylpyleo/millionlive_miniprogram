@@ -14,7 +14,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.6.1",
 	"appid": "wx7e9947cd4e993268",
-	"projectname": "million-query",
+	"projectname": "millionlive_miniprogram",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

@@ -8,22 +8,42 @@
   <view class='page__bd'>
 
     <view class='card' wx:for='{{cardInfo}}' wx:key='{{item.sortId}}'>
+
       <view class='card-head'>
-        <view bindtap='toggleIcon' id='{{index}}'>
-          <image src="https://storage.matsurihi.me/mltd/icon_l/{{item.resourceId}}_{{item.showAwaken?'1':'0'}}.png" class='thumbnail'></image>
-        </view>
         <view class='title'>{{item.name}}</view>
       </view>
-      <view class='flavor-text'>{{item.flavorText}}</view>
+
+      <view class='card-body'>
+        <view bindtap='toggleIcon' id='{{index}}' class='thumb-view'>
+          <image src="https://storage.matsurihi.me/mltd/icon_l/{{item.resourceId}}_{{item.showAwaken?'1':'0'}}.png" class='thumbnail'></image>
+        </view>
+        <view class='flavor-text' hidden='{{item.flavorText==undefined}}'>{{item.flavorText}}</view>
+        <view class='flavor-text' hidden='{{item.flavorText!=undefined}}'>没有台词</view>
+      </view>
+
+
+      <view class='card-footer'>
+        <view wx:if='{{arr[index]!=undefined}}'>
+          <text class='addOn'>追加于</text>
+          <span class='modified-date'>{{arr[index]}}</span>
+        </view>
+        <view wx:else>
+          <text class='addOn'>初期追加</text>
+        </view>
+      </view>
     </view>
 
     <!-- <view class='card'>
       <view class='card-head'>
-        <view><image src='https://storage.matsurihi.me/mltd/icon_l/043nor0103_1.png' class='thumbnail'></image></view>
+        <view>
+          <image src='https://storage.matsurihi.me/mltd/icon_l/043nor0103_1.png' class='thumbnail'></image>
+        </view>
         <view class='title'>"ようこそ私達の劇場へ！　天海春香"</view>
       </view>
       <view class='flavor-text'>あっ……{$P$}さん、\n見に来てくれたんだ！\nわたしの演奏を聴いたら、\nなんて言ってくれるかな……えへへ♪\n上手に弾けるように、頑張らなくちゃ！
-</view>
+      </view>
+      <view class='line'></view>
+      <view class='card-footer'>追加于<span class='modified-date'>2018年3月28日</span></view>
     </view> -->
 
   </view>

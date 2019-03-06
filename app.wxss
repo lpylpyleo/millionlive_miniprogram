@@ -31,3 +31,11 @@
     padding-bottom: 30px;
     padding: 10px;
 }
+
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: #aaa;
+  margin: 0;
+}
+

@@ -1,8 +1,21 @@
-<div class="weui-gallery" style="display: block">
-  <span class="weui-gallery__img" style="background-image: url(https://storage.matsurihi.me/mltd/card_bg/021mat0064_0.png);"></span>
-  <div class="weui-gallery__opr">
-    <a href="javascript:" class="weui-gallery__del">
-      <i class="weui-icon-delete weui-icon_gallery-delete"></i>
-    </a>
-  </div>
-</div>
+<view class='card'>
+  <view class='card-head'>
+
+    <view class='title'>"ようこそ私達の劇場へ！　天海春香"</view>
+  </view>
+
+  <view class='card-body'>
+
+    <image src='https://storage.matsurihi.me/mltd/icon_l/043nor0103_1.png' class='thumbnail'></image>
+
+    <p class='flavor-text'>あっ……{$P$}さん、\n見に来てくれたんだ！\nわたしの演奏を聴いたら、\nなんて言ってくれるかな……えへへ♪\n上手に弾けるように、頑張らなくちゃ！
+    </p>
+  </view>
+
+  <view class='card-footer'>
+
+    <view>
+      <text class='addOn'>初期追加</text>
+    </view>
+  </view>
+</view>
