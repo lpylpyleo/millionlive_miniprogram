@@ -1,4 +1,5 @@
 let app = getApp()
+const util=require('../../utils/util.js')
 
 Page({
 
@@ -25,7 +26,7 @@ Page({
       let date = that.data.cardInfo[i].addDate;
       //转换日期格式
       if(date!=undefined){
-        date=new Date(date).toLocaleString();
+        date = util.formatTime(new Date(date))
       }
       arr[i] = date;
     }
@@ -35,14 +36,15 @@ Page({
   },
 
   /**
-   * 切换图标
+   * 切换图标和文字
    */
-  toggleIcon: function(e) {
-    let index = e.currentTarget.id
+  toggleInfo: function(e) {
+    let index = e.currentTarget.id;
+
     //新增属性，undefined => false
-    let shown = "cardInfo[" + index + "].showAwaken"
+    let awaken = "cardInfo[" + index + "].showAwakenInfo"
     this.setData({
-      [shown]: !this.data.cardInfo[index].showAwaken
+      [awaken]: !this.data.cardInfo[index].showAwakenInfo
     })
   }
 
