@@ -18,7 +18,7 @@
           <image src="https://storage.matsurihi.me/mltd/icon_l/{{item.resourceId}}_{{item.showAwaken?'1':'0'}}.png" class='thumbnail'></image>
         </view>
         <view class='flavor-text' hidden='{{item.flavorText==undefined}}'>{{item.flavorText}}</view>
-        <view class='flavor-text' hidden='{{item.flavorText!=undefined}}'>没有台词</view>
+        <view class='flavor-text' hidden='{{item.flavorText!=undefined}}'>（没有台词）</view>
       </view>
 
 

@@ -9,13 +9,13 @@
   width: 80px;
   border: 1px rgb(161, 161, 161) solid;
   border-radius: 5px;
-  margin:0 10px 10px 10px;
+  margin: 0 10px 10px 10px;
   float: left;
 }
 
 .flavor-text {
   font-size: 0.8em;
-  padding: 10px;
+  padding: 0 10px;
   text-indent: 2em;
 }
 
@@ -28,18 +28,18 @@
 
 .card-head {
   padding: 10px 0;
-  background-color: rgba(0,0,0,.03);
-  border-bottom: 1px solid rgba(0,0,0,.05);
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .addOn {
   font-size: 12px;
 }
 
-.card-footer{
+.card-footer {
   text-align: right;
-  background-color:rgba(0,0,0,.03);
-  border-top: 1px solid rgba(0,0,0,.05);
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
   padding-right: 15px;
 }
 
@@ -48,11 +48,7 @@
   font-size: 14px;
 }
 
-.card-body{
+.card-body {
   padding: 20px 0;
   min-height: 80px;
 }
-
-/* .thumb-view{
-  display: inline
-} */

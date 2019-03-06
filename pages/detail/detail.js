@@ -25,7 +25,7 @@ Page({
       let date = that.data.cardInfo[i].addDate;
       //转换日期格式
       if(date!=undefined){
-        date=new Date(date).toLocaleDateString();
+        date=new Date(date).toLocaleString();
       }
       arr[i] = date;
     }
