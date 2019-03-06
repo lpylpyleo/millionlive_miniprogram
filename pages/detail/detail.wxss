@@ -2,6 +2,7 @@
   font-size: 1.1em;
   text-align: center;
   margin-left: 20rpx;
+  word-break: keep-all;
 }
 
 .thumbnail {
