@@ -12,24 +12,24 @@
       <form bindsubmit='handleSubmit'>
 
         <view class="section">
+          <view class='hint'>idol选择器</view>
           <picker bindchange="onPickerChange" value="{{idolIndex}}" range="{{idols}}" range-key='{{"name"}}' name="idolId" id='idolIndex'>
-            <view class='opts'>选择idol： {{idols[idolIndex].name}}</view>
+            <view class='opts'>当前选择： {{idols[idolIndex].name}}</view>
           </picker>
         </view>
 
-        <view class="line"></view>
 
         <view class="section">
+          <view class='hint'>稀有度选择器</view>
           <picker bindchange="onPickerChange" value="{{rarityIndex}}" range="{{rarity}}" name="rarity" id='rarityIndex'>
-            <view class='opts'>选择稀有度： {{rarity[rarityIndex]}}</view>
+            <view class='opts'>当前选择： {{rarity[rarityIndex]}}</view>
           </picker>
         </view>
 
-        <view class="line"></view>
-
         <view class="section">
+          <view class='hint'>类型选择器</view>
           <picker bindchange="onPickerChange" value="{{extraTypeIndex}}" range="{{extraType}}" name="extraType" id='extraTypeIndex'>
-            <view class='opts'>选择类型： {{extraType[extraTypeIndex]}}</view>
+            <view class='opts'>当前选择： {{extraType[extraTypeIndex]}}</view>
           </picker>
         </view>
 
@@ -40,6 +40,11 @@
 
       </form>
     </view>
+  </view>
+
+  <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__text">Powered by matsurihi.me</view>
+    <text class="weui-footer__text">The copyright to THE IDOLM@STER contents belongs to BANDAI NAMCO Entertainment Inc.</text>
   </view>
 
 </view>
