@@ -1,7 +1,7 @@
 .title {
   font-size: 1.1em;
   text-align: center;
-  margin-left: 20rpx;
+  /* margin-left: 20rpx; */
   word-break: keep-all;
 }
 
@@ -21,8 +21,8 @@
 }
 
 .card {
-  box-shadow: 2px 2px 5px #b9b9b9;
-  border: 1px solid #868686;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #c7c7c7;
   border-radius: 5px;
   margin: 30px 10px 0 10px;
 }

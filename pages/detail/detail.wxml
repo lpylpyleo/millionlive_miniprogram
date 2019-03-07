@@ -32,24 +32,39 @@
         </view>
       </view>
     </view>
-
-    <!--
-     <view class='card'>
-      <view class='card-head'>
-        <view>
-          <image src='https://storage.matsurihi.me/mltd/icon_l/043nor0103_1.png' class='thumbnail'></image>
-        </view>
-        <view class='title'>"ようこそ私達の劇場へ！　天海春香"</view>
-      </view>
-      <view class='flavor-text'>あっ……{$P$}さん、\n見に来てくれたんだ！\nわたしの演奏を聴いたら、\nなんて言ってくれるかな……えへへ♪\n上手に弾けるように、頑張らなくちゃ！
-      </view>
-      <view class='line'></view>
-      <view class='card-footer'>追加于<span class='modified-date'>2018年3月28日</span></view>
-    </view>
-     -->
-
   </view>
 
+
+
+
+  <!-- 样式测试区域 -->
+
+  <!-- <view class='page__bd'>
+
+    <view class='card'>
+
+      <view class='card-head'>
+        <view class='title'>BRAND NEW PERFORMANCE 天海春香</view>
+      </view>
+
+      <view class='card-body'>
+        <view bindtap='toggleInfo' id='{{index}}' class='thumb-view'>
+          <image src="https://storage.matsurihi.me/mltd/icon_l/022ser0054_1.png" class='thumbnail'></image>
+        </view>
+        <view class='flavor-text'>flavorTextflavorTextflavorTextflavorTextflavorTextflavorTextflavorTextflavorTextflavorTextflavorTextflavorTextflavorTextflavorTextflavorText</view>
+
+      </view>
+
+
+      <view class='card-footer'>
+        <view>
+          <text class='addOn'>追加于</text>
+          <span class='modified-date'>2018-6-30</span>
+        </view>
+
+      </view>
+    </view>
+  </view> -->
 
 
 </view>
