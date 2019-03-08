@@ -35,16 +35,16 @@
 
 
         <button form-type='submit' class='weui-btn mBtn' type='primary'>
-          <i class="{{isLoading?'weui-loading':'hidden'}}"></i>
-          提交</button>
-
+          <i class="{{isLoading?'weui-loading':'hidden'}}"></i>提交</button>
       </form>
+
+      <view class="weui-footer weui-footer_fixed-bottom">
+        <view class="weui-footer__text">Powered by matsurihi.me</view>
+        <text class="weui-footer__text">The copyright to THE IDOLM@STER contents belongs to BANDAI NAMCO Entertainment Inc.</text>
+      </view>
     </view>
   </view>
 
-  <view class="weui-footer weui-footer_fixed-bottom">
-    <view class="weui-footer__text">Powered by matsurihi.me</view>
-    <text class="weui-footer__text">The copyright to THE IDOLM@STER contents belongs to BANDAI NAMCO Entertainment Inc.</text>
-  </view>
+
 
 </view>

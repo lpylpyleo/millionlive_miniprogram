@@ -7,6 +7,7 @@ Page({
   data: {
     isLoading: false,
     rarity: ['n', 'r', 'sr', 'ssr'],
+    //取得するカードの種類（none | pst | pstr | pstp | fes | 1staniv | extra）
     extraType: ['全部', 'none', 'pst', 'pstr', 'pstp', 'fes', '1staniv', 'extra'],
     idolIndex: 0,
     rarityIndex: 0,

@@ -53,3 +53,11 @@
   padding: 20px 0;
   min-height: 80px;
 }
+
+.btn-area{
+  margin-top: 20px;
+}
+
+.weui-btn{
+  color: royalblue;
+}

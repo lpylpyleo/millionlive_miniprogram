@@ -39,32 +39,41 @@
 
   <!-- 样式测试区域 -->
 
-  <!-- <view class='page__bd'>
+  <!-- <view class="page__bd" role="" aria-label="">
 
-    <view class='card'>
-
-      <view class='card-head'>
-        <view class='title'>BRAND NEW PERFORMANCE 天海春香</view>
+  
+    <view class="card" role="" aria-label="">
+      <view class="card-head" role="" aria-label="">
+        <view class="title" role="" aria-label="">天海春香</view>
       </view>
-
-      <view class='card-body'>
-        <view bindtap='toggleInfo' id='{{index}}' class='thumb-view'>
-          <image src="https://storage.matsurihi.me/mltd/icon_l/022ser0054_1.png" class='thumbnail'></image>
+      <view class="card-body" role="" aria-label="">
+        <view bindtap="toggleInfo" class="thumb-view" id="0" role="" aria-label="">
+          <image class="thumbnail" src="https://storage.matsurihi.me/mltd/icon_l/001har0011_0.png">
+          </image>
         </view>
-        <view class='flavor-text'>flavorTextflavorTextflavorTextflavorTextflavorTextflavorTextflavorTextflavorTextflavorTextflavorTextflavorTextflavorTextflavorTextflavorText</view>
+        <view class="flavor-text" role="" aria-label="">天海春香、17歳です！ トップアイドル目指して、歌も踊りも せいいっぱい頑張ってます！ これからも、よろしくお願いしますね、 {$P$}さんっ！！</view>
 
-      </view>
-
-
-      <view class='card-footer'>
-        <view>
-          <text class='addOn'>追加于</text>
-          <span class='modified-date'>2018-6-30</span>
+        <view class="weui-flex btn-area">
+          <view class="weui-flex__item weui-flex">
+            <button class="weui-btn" type='primary' plain='true' size='mini'>显示大图</button>
+          </view>
+          <view class="weui-flex__item weui-flex">
+            <button class="weui-btn" type='primary' plain='true' size='mini'>查看数值</button>
+          </view>
         </view>
 
       </view>
+
+      <view class="card-footer" role="" aria-label="">
+        <view role="" aria-label="">
+          <text class="addOn">初期追加</text>
+        </view>
+      </view>
+    
     </view>
   </view> -->
+
+
 
 
 </view>
