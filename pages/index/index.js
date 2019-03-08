@@ -7,12 +7,16 @@ Page({
   data: {
     isLoading: false,
     rarity: ['n', 'r', 'sr', 'ssr'],
-    //取得するカードの種類（none | pst | pstr | pstp | fes | 1staniv | extra）
+    /**
+     * 若查询字段，種類（none | pst | pstr | pstp | fes | 1staniv | extra）
+     * 这里新增了不查的类型
+     */
     extraType: ['全部', 'none', 'pst', 'pstr', 'pstp', 'fes', '1staniv', 'extra'],
     idolIndex: 0,
     rarityIndex: 0,
     extraTypeIndex: 0,
-    idols: data
+    idols: data,
+    isDisabled:false
   },
 
   //事件处理函数
@@ -27,7 +31,8 @@ Page({
    */
   handleSubmit: function(e) {
     this.setData({
-      isLoading: true
+      isLoading: true,
+      isDisabled:true
     })
     var that = this;
     let id = Number(that.data.idolIndex) + 1;
@@ -43,13 +48,14 @@ Page({
       url: url,
       success: (res) => {
         console.log('request success', res);
+        //采用globalData传参
         app.globalData.cardInfo = res.data;
-
         wx.navigateTo({
           url: '/pages/detail/detail'
         });
         that.setData({
-          isLoading: false
+          isLoading: false,
+          isDisabled:false
         })
 
       },
