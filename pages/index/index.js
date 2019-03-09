@@ -15,8 +15,7 @@ Page({
     idolIndex: 0,
     rarityIndex: 0,
     extraTypeIndex: 0,
-    idols: data,
-    isDisabled:false
+    idols: data
   },
 
   //事件处理函数
@@ -31,8 +30,7 @@ Page({
    */
   handleSubmit: function(e) {
     this.setData({
-      isLoading: true,
-      isDisabled:true
+      isLoading: true
     })
     var that = this;
     let id = Number(that.data.idolIndex) + 1;
@@ -54,8 +52,7 @@ Page({
           url: '/pages/detail/detail'
         });
         that.setData({
-          isLoading: false,
-          isDisabled:false
+          isLoading: false
         })
 
       },
