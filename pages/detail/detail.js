@@ -1,5 +1,5 @@
 const app = getApp()
-const util=require('../../utils/util.js')
+const util = require('../../utils/util.js')
 
 Page({
 
@@ -25,7 +25,7 @@ Page({
     for (let i = 0; i < this.data.cardInfo.length; i++) {
       let date = that.data.cardInfo[i].addDate;
       //转换日期格式
-      if(date!=undefined){
+      if (date != undefined) {
         date = util.formatTime(new Date(date))
       }
       arr[i] = date;
